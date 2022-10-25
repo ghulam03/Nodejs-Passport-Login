@@ -14,7 +14,6 @@ const methodOverride = require('method-override')
 const initializePassport = require('./passport-config')
 
 const app = express()
-
 initializePassport(
   passport,
   email => users.find(user => user.email === email),
